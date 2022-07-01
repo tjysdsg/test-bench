@@ -4,4 +4,4 @@ Code is heavily adapted from https://github.com/llvm/llvm-project/blob/main/libc
 
 # Results
 
-## [heap_sort](sort/heap_sort.hpp)
+[results/heap_sort.txt](results/heap_sort.txt)
