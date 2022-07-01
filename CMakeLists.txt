@@ -10,7 +10,7 @@ add_library(sort
         sort/stub.cpp)
 target_include_directories(sort PUBLIC sort)
 
-foreach (sort_name heap_sort quick_sort_lomuto quick_sort_hoare_middle)
+foreach (sort_name heap_sort quick_sort_lomuto_middle quick_sort_hoare_middle)
     set(_target_name test_${sort_name})
 
     # test
