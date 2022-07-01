@@ -1,0 +1,291 @@
+----------------------------------------------------------------------------------------------------------
+Benchmark                                                                Time             CPU   Iterations
+----------------------------------------------------------------------------------------------------------
+BM_Sort_uint32_Random_1                                               1.15 ns         1.16 ns    848822272
+BM_Sort_uint32_Random_4                                               6.08 ns         6.52 ns    117440512
+BM_Sort_uint32_Random_16                                              15.4 ns         15.2 ns     47185920
+BM_Sort_uint32_Random_64                                              23.4 ns         22.6 ns     26214400
+BM_Sort_uint32_Random_256                                             30.4 ns         30.5 ns     23592960
+BM_Sort_uint32_Random_1024                                            37.2 ns         36.6 ns     19660800
+BM_Sort_uint32_Random_16384                                           52.3 ns         52.5 ns     13107200
+BM_Sort_uint32_Random_262144                                          65.5 ns         65.4 ns     10747904
+BM_Sort_uint32_Ascending_1                                            1.02 ns         1.04 ns    838860800
+BM_Sort_uint32_Ascending_4                                            2.01 ns         2.08 ns    293601280
+BM_Sort_uint32_Ascending_16                                           3.52 ns         3.33 ns    234881024
+BM_Sort_uint32_Ascending_64                                           5.28 ns         5.00 ns    146800640
+BM_Sort_uint32_Ascending_256                                          7.55 ns         7.60 ns     90439680
+BM_Sort_uint32_Ascending_1024                                         11.4 ns         11.6 ns     61865984
+BM_Sort_uint32_Ascending_16384                                        30.5 ns         30.5 ns     23592960
+BM_Sort_uint32_Ascending_262144                                        103 ns          102 ns      7077888
+BM_Sort_uint32_Descending_1                                          1.000 ns         1.29 ns    618135552
+BM_Sort_uint32_Descending_4                                           2.04 ns         2.09 ns    262144000
+BM_Sort_uint32_Descending_16                                          3.79 ns         3.92 ns    234881024
+BM_Sort_uint32_Descending_64                                          5.37 ns         5.39 ns    130547712
+BM_Sort_uint32_Descending_256                                         7.53 ns         7.43 ns     90439680
+BM_Sort_uint32_Descending_1024                                        10.7 ns         10.9 ns     61865984
+BM_Sort_uint32_Descending_16384                                       24.0 ns         23.9 ns     29360128
+BM_Sort_uint32_Descending_262144                                      75.4 ns         75.3 ns      9961472
+BM_Sort_uint32_SingleElement_1                                       0.997 ns         1.15 ns    652476416
+BM_Sort_uint32_SingleElement_4                                        1.54 ns         1.47 ns    489422848
+BM_Sort_uint32_SingleElement_16                                       1.30 ns         1.34 ns    559415296
+BM_Sort_uint32_SingleElement_64                                      0.787 ns        0.761 ns    903610368
+BM_Sort_uint32_SingleElement_256                                     0.653 ns        0.674 ns    903610368
+BM_Sort_uint32_SingleElement_1024                                    0.623 ns        0.588 ns    903610368
+BM_Sort_uint32_SingleElement_16384                                   0.609 ns        0.687 ns   1000079360
+BM_Sort_uint32_SingleElement_262144                                  0.578 ns        0.547 ns   1000079360
+BM_Sort_uint32_PipeOrgan_1                                            1.00 ns         1.12 ns    783024128
+BM_Sort_uint32_PipeOrgan_4                                            2.13 ns         2.09 ns    262144000
+BM_Sort_uint32_PipeOrgan_16                                           3.67 ns         3.91 ns    195821568
+BM_Sort_uint32_PipeOrgan_64                                           5.11 ns         5.15 ns    130547712
+BM_Sort_uint32_PipeOrgan_256                                          7.02 ns         6.79 ns    117440512
+BM_Sort_uint32_PipeOrgan_1024                                         10.2 ns         10.4 ns     73400320
+BM_Sort_uint32_PipeOrgan_16384                                        24.1 ns         23.8 ns     23592960
+BM_Sort_uint32_PipeOrgan_262144                                       79.0 ns         80.0 ns     10747904
+BM_Sort_uint32_QuickSortAdversary_1                                   1.37 ns         1.19 ns    526385152
+BM_Sort_uint32_QuickSortAdversary_4                                   2.49 ns         2.38 ns    262144000
+BM_Sort_uint32_QuickSortAdversary_16                                  4.32 ns         4.26 ns    146800640
+BM_Sort_uint32_QuickSortAdversary_64                                  6.81 ns         7.01 ns     98041856
+BM_Sort_uint32_QuickSortAdversary_256                                 8.04 ns         8.01 ns     83886080
+BM_Sort_uint32_QuickSortAdversary_1024                                12.6 ns         12.8 ns     58720256
+BM_Sort_uint32_QuickSortAdversary_16384                               35.8 ns         35.0 ns     19660800
+BM_Sort_uint32_QuickSortAdversary_262144                               106 ns          107 ns      6553600
+BM_Sort_uint64_Random_1                                               1.01 ns         1.19 ns    903610368
+BM_Sort_uint64_Random_4                                               5.82 ns         6.15 ns    167772160
+BM_Sort_uint64_Random_16                                              15.5 ns         15.9 ns     51118080
+BM_Sort_uint64_Random_64                                              22.3 ns         22.1 ns     26214400
+BM_Sort_uint64_Random_256                                             29.4 ns         29.8 ns     23592960
+BM_Sort_uint64_Random_1024                                            36.6 ns         35.4 ns     16777216
+BM_Sort_uint64_Random_16384                                           51.0 ns         51.3 ns     13107200
+BM_Sort_uint64_Random_262144                                          65.3 ns         65.4 ns     10747904
+BM_Sort_uint64_Ascending_1                                            1.05 ns         1.01 ns    618135552
+BM_Sort_uint64_Ascending_4                                            2.16 ns         2.39 ns    234881024
+BM_Sort_uint64_Ascending_16                                           3.77 ns         3.54 ns    167772160
+BM_Sort_uint64_Ascending_64                                           6.97 ns         6.92 ns    117440512
+BM_Sort_uint64_Ascending_256                                          9.77 ns         9.34 ns     61865984
+BM_Sort_uint64_Ascending_1024                                         13.5 ns         13.3 ns     48234496
+BM_Sort_uint64_Ascending_16384                                        29.3 ns         29.8 ns     23592960
+BM_Sort_uint64_Ascending_262144                                        105 ns          106 ns      7077888
+BM_Sort_uint64_Descending_1                                           1.07 ns         1.03 ns    848822272
+BM_Sort_uint64_Descending_4                                           2.01 ns         2.02 ns    293601280
+BM_Sort_uint64_Descending_16                                          3.95 ns         3.92 ns    234881024
+BM_Sort_uint64_Descending_64                                          5.42 ns         5.59 ns    117440512
+BM_Sort_uint64_Descending_256                                         7.55 ns         7.49 ns     98041856
+BM_Sort_uint64_Descending_1024                                        10.9 ns         10.9 ns     56098816
+BM_Sort_uint64_Descending_16384                                       24.0 ns         23.9 ns     29360128
+BM_Sort_uint64_Descending_262144                                      73.1 ns         73.7 ns      9961472
+BM_Sort_uint64_SingleElement_1                                        1.28 ns         1.21 ns    618135552
+BM_Sort_uint64_SingleElement_4                                        1.73 ns         1.85 ns    438566912
+BM_Sort_uint64_SingleElement_16                                       1.37 ns         1.41 ns    510656512
+BM_Sort_uint64_SingleElement_64                                      0.752 ns        0.709 ns    903610368
+BM_Sort_uint64_SingleElement_256                                     0.624 ns        0.672 ns   1000079360
+BM_Sort_uint64_SingleElement_1024                                    0.645 ns        0.633 ns    838860800
+BM_Sort_uint64_SingleElement_16384                                   0.624 ns        0.607 ns    978845696
+BM_Sort_uint64_SingleElement_262144                                  0.687 ns        0.656 ns   1000079360
+BM_Sort_uint64_PipeOrgan_1                                            1.20 ns         1.10 ns    469762048
+BM_Sort_uint64_PipeOrgan_4                                            2.27 ns         2.39 ns    234881024
+BM_Sort_uint64_PipeOrgan_16                                           3.49 ns         3.59 ns    195821568
+BM_Sort_uint64_PipeOrgan_64                                           4.97 ns         5.22 ns    146800640
+BM_Sort_uint64_PipeOrgan_256                                          7.11 ns         7.17 ns     98041856
+BM_Sort_uint64_PipeOrgan_1024                                         9.80 ns         9.93 ns     69206016
+BM_Sort_uint64_PipeOrgan_16384                                        22.1 ns         22.4 ns     29360128
+BM_Sort_uint64_PipeOrgan_262144                                       64.5 ns         65.4 ns     10747904
+BM_Sort_uint64_QuickSortAdversary_1                                   1.14 ns         1.17 ns    533987328
+BM_Sort_uint64_QuickSortAdversary_4                                   2.40 ns         2.32 ns    262144000
+BM_Sort_uint64_QuickSortAdversary_16                                  4.06 ns         3.99 ns    195821568
+BM_Sort_uint64_QuickSortAdversary_64                                  6.03 ns         5.70 ns    106954752
+BM_Sort_uint64_QuickSortAdversary_256                                 7.71 ns         7.82 ns     83886080
+BM_Sort_uint64_QuickSortAdversary_1024                                12.0 ns         12.2 ns     58720256
+BM_Sort_uint64_QuickSortAdversary_16384                               35.0 ns         34.2 ns     19660800
+BM_Sort_uint64_QuickSortAdversary_262144                               104 ns         99.3 ns      7077888
+BM_Sort_pair<uint32, uint32>_Random_1                                 1.12 ns         1.16 ns    618135552
+BM_Sort_pair<uint32, uint32>_Random_4                                 7.82 ns         8.12 ns     90439680
+BM_Sort_pair<uint32, uint32>_Random_16                                20.5 ns         19.3 ns     38010880
+BM_Sort_pair<uint32, uint32>_Random_64                                30.5 ns         29.1 ns     23592960
+BM_Sort_pair<uint32, uint32>_Random_256                               38.6 ns         38.2 ns     16777216
+BM_Sort_pair<uint32, uint32>_Random_1024                              48.1 ns         45.8 ns     14680064
+BM_Sort_pair<uint32, uint32>_Random_16384                             63.4 ns         64.0 ns     10747904
+BM_Sort_pair<uint32, uint32>_Random_262144                            89.2 ns         89.4 ns      8388608
+BM_Sort_pair<uint32, uint32>_Ascending_1                              1.05 ns         1.01 ns    587202560
+BM_Sort_pair<uint32, uint32>_Ascending_4                              3.11 ns         3.33 ns    234881024
+BM_Sort_pair<uint32, uint32>_Ascending_16                             5.51 ns         5.45 ns    117440512
+BM_Sort_pair<uint32, uint32>_Ascending_64                             8.05 ns         7.82 ns     83886080
+BM_Sort_pair<uint32, uint32>_Ascending_256                            11.8 ns         11.4 ns     56098816
+BM_Sort_pair<uint32, uint32>_Ascending_1024                           18.7 ns         19.4 ns     41943040
+BM_Sort_pair<uint32, uint32>_Ascending_16384                          52.5 ns         52.5 ns     13107200
+BM_Sort_pair<uint32, uint32>_Ascending_262144                          191 ns          197 ns      2621440
+BM_Sort_pair<uint32, uint32>_Descending_1                             1.24 ns         1.28 ns    734003200
+BM_Sort_pair<uint32, uint32>_Descending_4                             4.52 ns         4.41 ns    187957248
+BM_Sort_pair<uint32, uint32>_Descending_16                            9.67 ns         9.26 ns     69206016
+BM_Sort_pair<uint32, uint32>_Descending_64                            13.8 ns         13.7 ns     53477376
+BM_Sort_pair<uint32, uint32>_Descending_256                           14.0 ns         13.9 ns     56098816
+BM_Sort_pair<uint32, uint32>_Descending_1024                          20.4 ns         20.9 ns     26214400
+BM_Sort_pair<uint32, uint32>_Descending_16384                         45.7 ns         46.5 ns     10747904
+BM_Sort_pair<uint32, uint32>_Descending_262144                         136 ns          131 ns      5242880
+BM_Sort_pair<uint32, uint32>_SingleElement_1                          1.24 ns         1.25 ns    526385152
+BM_Sort_pair<uint32, uint32>_SingleElement_4                          1.49 ns         1.50 ns    510656512
+BM_Sort_pair<uint32, uint32>_SingleElement_16                         1.03 ns         1.12 ns    559415296
+BM_Sort_pair<uint32, uint32>_SingleElement_64                        0.879 ns        0.972 ns    691011584
+BM_Sort_pair<uint32, uint32>_SingleElement_256                       0.799 ns        0.734 ns   1000079360
+BM_Sort_pair<uint32, uint32>_SingleElement_1024                       1.03 ns        0.862 ns    652476416
+BM_Sort_pair<uint32, uint32>_SingleElement_16384                     0.710 ns        0.671 ns    838860800
+BM_Sort_pair<uint32, uint32>_SingleElement_262144                    0.709 ns        0.672 ns   1000079360
+BM_Sort_pair<uint32, uint32>_PipeOrgan_1                              1.21 ns         1.29 ns    510656512
+BM_Sort_pair<uint32, uint32>_PipeOrgan_4                              3.71 ns         3.73 ns    167772160
+BM_Sort_pair<uint32, uint32>_PipeOrgan_16                             7.55 ns         7.58 ns    117440512
+BM_Sort_pair<uint32, uint32>_PipeOrgan_64                             11.9 ns         11.6 ns     51118080
+BM_Sort_pair<uint32, uint32>_PipeOrgan_256                            12.7 ns         12.5 ns     56098816
+BM_Sort_pair<uint32, uint32>_PipeOrgan_1024                           18.9 ns         19.5 ns     39321600
+BM_Sort_pair<uint32, uint32>_PipeOrgan_16384                          41.5 ns         42.6 ns     14680064
+BM_Sort_pair<uint32, uint32>_PipeOrgan_262144                          123 ns          122 ns      5767168
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_1                     1.24 ns         1.15 ns    734003200
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_4                     5.18 ns         5.39 ns    234881024
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_16                    9.26 ns         9.34 ns     65273856
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_64                    9.82 ns         9.58 ns     73400320
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_256                   14.8 ns         15.2 ns     53477376
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_1024                  23.1 ns         22.9 ns     29360128
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_16384                 43.8 ns         44.7 ns     14680064
+BM_Sort_pair<uint32, uint32>_QuickSortAdversary_262144                51.8 ns         51.3 ns     13107200
+BM_Sort_tuple<uint32, uint64, uint32>_Random_1                        1.28 ns         1.36 ns    435159040
+BM_Sort_tuple<uint32, uint64, uint32>_Random_4                        9.38 ns         8.62 ns     65273856
+BM_Sort_tuple<uint32, uint64, uint32>_Random_16                       29.4 ns         30.5 ns     23592960
+BM_Sort_tuple<uint32, uint64, uint32>_Random_64                       42.6 ns         43.7 ns     19660800
+BM_Sort_tuple<uint32, uint64, uint32>_Random_256                      51.2 ns         51.1 ns     14680064
+BM_Sort_tuple<uint32, uint64, uint32>_Random_1024                     62.5 ns         63.6 ns     11796480
+BM_Sort_tuple<uint32, uint64, uint32>_Random_16384                    86.7 ns         83.8 ns      8388608
+BM_Sort_tuple<uint32, uint64, uint32>_Random_262144                    110 ns          107 ns      6553600
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_1                     1.33 ns         1.04 ns    618135552
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_4                     5.57 ns         5.98 ns    195821568
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_16                    11.5 ns         11.0 ns     83886080
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_64                    16.3 ns         15.4 ns     45613056
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_256                   27.2 ns         27.8 ns     19660800
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_1024                  41.0 ns         42.1 ns     19660800
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_16384                  104 ns          109 ns      4718592
+BM_Sort_tuple<uint32, uint64, uint32>_Ascending_262144                 430 ns          434 ns      1835008
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_1                    1.17 ns         1.24 ns    691011584
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_4                    4.28 ns         4.26 ns    234881024
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_16                   9.21 ns         9.17 ns     78381056
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_64                   14.4 ns         15.2 ns     38010880
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_256                  19.3 ns         19.7 ns     26214400
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_1024                 29.2 ns         28.5 ns     23592960
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_16384                75.6 ns         73.2 ns      9175040
+BM_Sort_tuple<uint32, uint64, uint32>_Descending_262144                254 ns          243 ns      3145728
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_1                 1.21 ns        0.995 ns    533987328
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_4                 2.04 ns         2.18 ns    293601280
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_16                1.26 ns         1.31 ns    559415296
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_64                1.28 ns         1.29 ns    618135552
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_256               1.13 ns         1.17 ns    559415296
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_1024              1.10 ns        0.987 ns    838860800
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_16384             1.08 ns        0.969 ns    838860800
+BM_Sort_tuple<uint32, uint64, uint32>_SingleElement_262144            1.08 ns         1.16 ns    510656512
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_1                     1.11 ns         1.01 ns    559415296
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_4                     3.73 ns         3.73 ns    167772160
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_16                    7.79 ns         7.45 ns     83886080
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_64                    12.9 ns         14.3 ns     53477376
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_256                   19.7 ns         19.7 ns     29360128
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_1024                  27.1 ns         27.4 ns     26214400
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_16384                 67.0 ns         67.4 ns      9961472
+BM_Sort_tuple<uint32, uint64, uint32>_PipeOrgan_262144                 220 ns          224 ns      3145728
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_1            1.10 ns         1.09 ns    559415296
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_4            3.99 ns         3.99 ns    195821568
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_16           7.97 ns         8.01 ns     83886080
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_64           13.1 ns         12.9 ns     53477376
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_256          18.9 ns         19.1 ns     26214400
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_1024         24.0 ns         22.4 ns     29360128
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_16384        74.5 ns         75.6 ns     10747904
+BM_Sort_tuple<uint32, uint64, uint32>_QuickSortAdversary_262144       87.9 ns         89.4 ns      7864320
+BM_Sort_string_Random_1                                               1.57 ns         1.58 ns    405012480
+BM_Sort_string_Random_4                                               31.5 ns         34.2 ns     19660800
+BM_Sort_string_Random_16                                              58.8 ns         55.6 ns     11796480
+BM_Sort_string_Random_64                                              87.7 ns         88.6 ns      9175040
+BM_Sort_string_Random_256                                              110 ns          119 ns      7340032
+BM_Sort_string_Random_1024                                             133 ns          139 ns      5505024
+BM_Sort_string_Random_16384                                            206 ns          214 ns      3145728
+BM_Sort_string_Random_262144                                           308 ns          298 ns      2359296
+BM_Sort_string_Ascending_1                                            1.57 ns         1.62 ns    365690880
+BM_Sort_string_Ascending_4                                            22.1 ns         22.9 ns     29360128
+BM_Sort_string_Ascending_16                                           35.2 ns         34.2 ns     19660800
+BM_Sort_string_Ascending_64                                           52.6 ns         51.1 ns     14680064
+BM_Sort_string_Ascending_256                                          74.4 ns         75.3 ns      9961472
+BM_Sort_string_Ascending_1024                                          107 ns         97.8 ns      6553600
+BM_Sort_string_Ascending_16384                                         297 ns          298 ns      2359296
+BM_Sort_string_Ascending_262144                                       1201 ns         1212 ns       786432
+BM_Sort_string_Descending_1                                           1.60 ns         2.01 ns    457703424
+BM_Sort_string_Descending_4                                           22.2 ns         23.2 ns     23592960
+BM_Sort_string_Descending_16                                          38.2 ns         39.1 ns     16777216
+BM_Sort_string_Descending_64                                          56.0 ns         59.6 ns     11796480
+BM_Sort_string_Descending_256                                         76.9 ns         81.5 ns      7864320
+BM_Sort_string_Descending_1024                                         102 ns         97.4 ns      7864320
+BM_Sort_string_Descending_16384                                        229 ns          228 ns      3145728
+BM_Sort_string_Descending_262144                                       867 ns          874 ns       786432
+BM_Sort_string_SingleElement_1                                        1.53 ns         1.56 ns    559415296
+BM_Sort_string_SingleElement_4                                        11.1 ns         12.1 ns     61865984
+BM_Sort_string_SingleElement_16                                       11.1 ns         11.5 ns     69206016
+BM_Sort_string_SingleElement_64                                       9.47 ns         7.68 ns     69206016
+BM_Sort_string_SingleElement_256                                      7.12 ns         7.45 ns    117440512
+BM_Sort_string_SingleElement_1024                                     6.26 ns         5.87 ns     90439680
+BM_Sort_string_SingleElement_16384                                    5.75 ns         6.06 ns    195821568
+BM_Sort_string_SingleElement_262144                                   5.94 ns         4.97 ns    106954752
+BM_Sort_string_PipeOrgan_1                                            1.56 ns         1.65 ns    435159040
+BM_Sort_string_PipeOrgan_4                                            24.9 ns         22.6 ns     26214400
+BM_Sort_string_PipeOrgan_16                                           36.5 ns         36.2 ns     14680064
+BM_Sort_string_PipeOrgan_64                                           54.0 ns         52.5 ns     13107200
+BM_Sort_string_PipeOrgan_256                                          71.2 ns         68.3 ns     10747904
+BM_Sort_string_PipeOrgan_1024                                         88.7 ns         89.4 ns      8388608
+BM_Sort_string_PipeOrgan_16384                                         204 ns          197 ns      2621440
+BM_Sort_string_PipeOrgan_262144                                        716 ns          730 ns      1048576
+BM_Sort_string_QuickSortAdversary_1                                   1.55 ns         1.57 ns    487325696
+BM_Sort_string_QuickSortAdversary_4                                   32.1 ns         29.1 ns     23592960
+BM_Sort_string_QuickSortAdversary_16                                  57.7 ns         61.1 ns     10747904
+BM_Sort_string_QuickSortAdversary_64                                  86.6 ns         91.4 ns      7864320
+BM_Sort_string_QuickSortAdversary_256                                  109 ns          104 ns      6029312
+BM_Sort_string_QuickSortAdversary_1024                                 133 ns          131 ns      5242880
+BM_Sort_string_QuickSortAdversary_16384                                208 ns          209 ns      2621440
+BM_Sort_string_QuickSortAdversary_262144                               331 ns          323 ns      3145728
+BM_Sort_float_Random_1                                                1.12 ns         1.15 ns    838860800
+BM_Sort_float_Random_4                                                6.38 ns         6.52 ns    117440512
+BM_Sort_float_Random_16                                               16.4 ns         16.9 ns     45350912
+BM_Sort_float_Random_64                                               24.6 ns         24.5 ns     23592960
+BM_Sort_float_Random_256                                              34.8 ns         35.1 ns     23592960
+BM_Sort_float_Random_1024                                             43.3 ns         43.8 ns     16777216
+BM_Sort_float_Random_16384                                            64.3 ns         64.9 ns     11796480
+BM_Sort_float_Random_262144                                           76.6 ns         76.6 ns      9175040
+BM_Sort_float_Ascending_1                                             1.09 ns         1.32 ns    734003200
+BM_Sort_float_Ascending_4                                             2.58 ns         2.83 ns    391643136
+BM_Sort_float_Ascending_16                                            3.99 ns         4.19 ns    167772160
+BM_Sort_float_Ascending_64                                            5.87 ns         5.84 ns    106954752
+BM_Sort_float_Ascending_256                                           9.83 ns         9.79 ns     73400320
+BM_Sort_float_Ascending_1024                                          14.4 ns         14.7 ns     49020928
+BM_Sort_float_Ascending_16384                                         37.6 ns         37.4 ns     19660800
+BM_Sort_float_Ascending_262144                                         131 ns          131 ns      5505024
+BM_Sort_float_Descending_1                                            1.29 ns         1.26 ns    435159040
+BM_Sort_float_Descending_4                                            2.35 ns         2.21 ns    262144000
+BM_Sort_float_Descending_16                                           4.10 ns         4.28 ns    167772160
+BM_Sort_float_Descending_64                                           6.01 ns         5.75 ns    130547712
+BM_Sort_float_Descending_256                                          8.75 ns         8.75 ns     83886080
+BM_Sort_float_Descending_1024                                         12.7 ns         12.3 ns     56098816
+BM_Sort_float_Descending_16384                                        30.1 ns         30.5 ns     23592960
+BM_Sort_float_Descending_262144                                       91.1 ns         91.5 ns      7340032
+BM_Sort_float_SingleElement_1                                         1.14 ns         1.22 ns    653262848
+BM_Sort_float_SingleElement_4                                         1.81 ns         1.75 ns    438566912
+BM_Sort_float_SingleElement_16                                        1.37 ns         1.37 ns    526385152
+BM_Sort_float_SingleElement_64                                       0.864 ns        0.846 ns    978845696
+BM_Sort_float_SingleElement_256                                      0.750 ns        0.778 ns    903610368
+BM_Sort_float_SingleElement_1024                                     0.691 ns        0.703 ns   1000079360
+BM_Sort_float_SingleElement_16384                                    0.678 ns        0.750 ns    978845696
+BM_Sort_float_SingleElement_262144                                   0.662 ns        0.640 ns    903610368
+BM_Sort_float_PipeOrgan_1                                             1.04 ns         1.10 ns    510656512
+BM_Sort_float_PipeOrgan_4                                             2.21 ns         2.03 ns    262144000
+BM_Sort_float_PipeOrgan_16                                            3.54 ns         3.57 ns    293601280
+BM_Sort_float_PipeOrgan_64                                            5.71 ns         5.86 ns    130547712
+BM_Sort_float_PipeOrgan_256                                           7.66 ns         7.81 ns     98041856
+BM_Sort_float_PipeOrgan_1024                                          11.3 ns         11.1 ns     61865984
+BM_Sort_float_PipeOrgan_16384                                         25.3 ns         25.0 ns     29360128
+BM_Sort_float_PipeOrgan_262144                                        78.2 ns         78.4 ns      9961472
+BM_Sort_float_QuickSortAdversary_1                                    1.03 ns        0.873 ns    734003200
+BM_Sort_float_QuickSortAdversary_4                                    2.06 ns         1.97 ns    404750336
+BM_Sort_float_QuickSortAdversary_16                                   3.81 ns         3.91 ns    167772160
+BM_Sort_float_QuickSortAdversary_64                                   6.14 ns         6.28 ns    146800640
+BM_Sort_float_QuickSortAdversary_256                                  8.52 ns         8.75 ns     83886080
+BM_Sort_float_QuickSortAdversary_1024                                 12.4 ns         12.6 ns     53477376
+BM_Sort_float_QuickSortAdversary_16384                                40.8 ns         40.0 ns     16777216
+BM_Sort_float_QuickSortAdversary_262144                                123 ns          122 ns      5767168
