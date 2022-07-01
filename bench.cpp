@@ -1,6 +1,9 @@
 #include <benchmark/benchmark.h>
 #include <algorithm>
 #include "common.h"
+#include "config.h"
+#include "heap_sort.hpp"
+#include "quick_sort.hpp"
 
 template<class ValueType, class Order>
 struct Sort {
@@ -9,7 +12,9 @@ struct Sort {
     void run(benchmark::State &state) const {
         runOpOnCopies<ValueType>(
                 state, Quantity, Order(), BatchSize::CountElements,
-                [](auto &Copy) { std::sort(Copy.begin(), Copy.end()); });
+                [](auto &Copy) {
+                    SORT_FUNC(Copy.data(), Copy.size());
+                });
     }
 
     bool skip() const { return Order() == ::Order::Heap; }

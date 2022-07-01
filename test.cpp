@@ -6,12 +6,9 @@
 #include <deque>
 #include "heap_sort.hpp"
 #include "quick_sort.hpp"
+#include "config.h"
 
 std::mt19937 randomness;
-
-#ifndef SORT_FUNC
-#error "Must define SORT_FUNC"
-#endif
 
 template<class Container, class RI>
 void test_sort_helper(RI f, RI l) {
