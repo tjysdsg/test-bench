@@ -2,7 +2,7 @@
 
 namespace internal {
     enum PIVOT_POLICY {
-        LAST, MIDDLE,
+        LAST, MIDDLE, MO3,
     };
 
     enum PARTITION_SCHEME {
@@ -25,6 +25,21 @@ namespace internal {
     struct ChoosePivot<T, MIDDLE> {
         static int choose_pivot(T *arr, int low, int high) {
             return (low + high) / 2;
+        }
+    };
+
+    template<typename T>
+    struct ChoosePivot<T, MO3> {
+        static int choose_pivot(T *arr, int low, int high) {
+            // estimate median, and place it in arr[high] and use it as the pivot
+            int mid = (low + high) / 2;
+            if (arr[mid] < arr[low])
+                std::swap(arr[low], arr[mid]);
+            if (arr[high] < arr[low])
+                std::swap(arr[low], arr[high]);
+            if (arr[mid] < arr[high])
+                std::swap(arr[mid], arr[high]);
+            return high;
         }
     };
 
@@ -105,4 +120,16 @@ void quick_sort_hoare_middle(T *arr, int n) {
     _quick_sort<T, MIDDLE, HOARE>(arr, 0, n - 1);
 }
 
-// TODO: median of 3, dutch flag
+template<typename T>
+void quick_sort_lomuto_mo3(T *arr, int n) {
+    using namespace internal;
+    _quick_sort<T, MO3, LOMUTO>(arr, 0, n - 1);
+}
+
+template<typename T>
+void quick_sort_hoare_mo3(T *arr, int n) {
+    using namespace internal;
+    _quick_sort<T, MO3, HOARE>(arr, 0, n - 1);
+}
+
+// TODO: dutch flag
