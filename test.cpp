@@ -183,5 +183,8 @@ int main(int, char **) {
 
     test_pointer_sort();
 
+    // std::vector<int> v{1, 1, 1, 1, 1, 1, 1};
+    // SORT_FUNC(v.data(), v.size());
+
     return 0;
 }
