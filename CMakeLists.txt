@@ -7,5 +7,6 @@ set(BENCHMARK_ENABLE_GTEST_TESTS OFF)
 add_subdirectory(thirdparty/benchmark)
 
 add_executable(bench bench.cpp)
-
 target_link_libraries(bench PUBLIC benchmark::benchmark)
+
+add_executable(test test.cpp)
