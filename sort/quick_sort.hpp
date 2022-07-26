@@ -63,15 +63,15 @@ namespace internal {
             std::swap(arr[pivot_idx], arr[high]);
             T pivot = arr[high]; // Lomuto scheme assumes that pivot is the last element
 
-            int i = (low - 1);    // index of smaller element
+            int i = low - 1;    // index of smaller element
             for (int j = low; j < high; j++) {
                 // if current element is smaller than or equal to pivot
                 if (arr[j] <= pivot)
                     std::swap(arr[++i], arr[j]);
             }
             // no need to check if i <= high
-            std::swap(arr[i + 1], arr[high]);
-            return i + 1;
+            std::swap(arr[++i], arr[high]);
+            return i;
         }
     };
 
