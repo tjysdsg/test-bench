@@ -17,7 +17,7 @@ struct Sort {
                 });
     }
 
-    bool skip() const { return Order() == ::Order::Heap; }
+    bool skip() const { return false; }
 
     std::string name() const {
         return "BM_Sort" + ValueType::name() + Order::name() + "_" +
